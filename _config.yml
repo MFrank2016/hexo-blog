@@ -8,13 +8,13 @@ subtitle:
 description: 为你，千千万万遍
 keywords: Java,微服务,DDD,多线程
 author: Frank
-language:
+language: zh-CN
 timezone:
 
 # URL
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://www.mfrank.cn
-root: /
+root: /breeze-blog/
 permalink: :year/:month/:day/:title/
 permalink_defaults:
 
@@ -78,7 +78,9 @@ theme: indigo
 # Deployment
 ## Docs: https://hexo.io/docs/deployment.html
 deploy:
-  type:
+  type: git
+  repository: git@github.com:MFrank2016/breeze-blog.git
+  branch: master
 
 
 feed:
