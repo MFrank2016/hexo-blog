@@ -70,7 +70,8 @@ tag_map:
   微服务: micro-service
   容器类: container
   并发容器类: concurrent-container
-  读书: reading
+  读书笔记: reading-notes
+  摘要: digest
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
