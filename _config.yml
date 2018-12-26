@@ -15,7 +15,7 @@ timezone:
 ## If your site is put in a subdirectory, set url as 'http://yoursite.com/child' and root as '/child/'
 url: https://www.mfrank.cn
 root: /
-permalink: :year/:month/:day/:title/
+permalink: :category/:title.html
 permalink_defaults:
 
 # Directory
@@ -35,7 +35,7 @@ titlecase: false # Transform title into titlecase
 external_link: true # Open external links in new tab
 filename_case: 0
 render_drafts: false
-post_asset_folder: false
+post_asset_folder: true
 relative_link: false
 future: true
 highlight:
@@ -56,7 +56,21 @@ index_generator:
 # Category & Tag
 default_category: uncategorized
 category_map:
+  编程: programming
+  生活: life
+  阅读: reading
+  感悟: thinking
+	其他: other
 tag_map:
+  Java: java
+  Java基础: java-base
+  Java进阶: java-advanced
+  Java高级: java-senior
+  多线程: multithread
+  微服务: micro-service
+  容器类: container
+  并发容器类: concurrent-container
+  读书: reading
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

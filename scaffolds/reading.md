@@ -1,6 +1,6 @@
 ---
 title: {{ title }}
 date: {{ date }}
-tags: 
-categorys: 
+tags: 读书
+categories: 阅读
 ---
