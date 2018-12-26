@@ -354,3 +354,25 @@ date: 2018-12-26 19:55:51
 18. `CountDownLatch`可以用来实现一个线程等待其他线程完成一组特定的操作之后才继续运行。这组操作被称为`先决操作`。
 
 19. `CountDownLatch`内部计数器值达到0后其值就恒定不变，后续执行该CountDownLatch实例的await方法的任何一个线程都不会被暂停。为了避免等待线程永远被暂停，`CountDownLatch.countDown()`调用必须放在代码中总是可以被执行到的地方，例如`finally`块中。
+
+20. 使用`CyclicBarrier`实现等待的线程被称为`参与方`，参与方只需要执行`CyclicBarrier.await()`就可以实现等待。
+
+21. 最后一个线程执行`CyclicBarrier.await()`会使得使用相应`CyclicBarrier`实例的其他所有参与方被唤醒，而最后一个线程自身并不会被暂停。
+
+22. 由于`CyclicBarrier`内部实现是基于条件变量的，因此`CyclicBarrier`的开销与条件变量的开销相似，其主要开销在可能产生的上下文切换。
+
+23. CyclicBarrier内部使用了一个条件变量trip来实现等待/通知。CyclicBarrier内部实现使用了分代的概念用于表示CyclicBarrier实例是可以重复使用的。
+
+24. 最后一个线程相当于通知线程，它执行费CyclicBarrier.await()会使得相应实例的parties值变为0，此时该线程会先执行barrierAction.run()，然后再执行 trip.signalAll()来唤醒所有等待线程。接着，开始下一个分代，即使得CyclicBarrier的parties指又重新恢复为其初始值。
+
+25. CyclicBarrier的典型应用场景包括以下几个:
+
+    1. 使得迭代算法并发化。
+
+    2. 在测试代码中模拟高并发。
+
+26. 将产品存入传输通道的线程就被称为生产者线程，从传输通道中取出产品进行消费的线程就被称为消费者线程。
+
+27. 一个方法或者操作如果能够导致其执行线程被暂停，那么我们就称相应的方法/操作为阻塞方法。阻塞方法能够导致上下文切换。
+28. 阻塞队列按照其存储空间的容量是否受限制来划分，可分为有界队列和无界队列。有界队列的存储容量限制是由应用程序制定的，无界队列的最大存储容量为Interger.MAX_VALUE($2^{31} - 1$)个元素。
+29. ArrayBlockingQueue的缺点是其内部在实现put、take操作的时候使用的是统一
