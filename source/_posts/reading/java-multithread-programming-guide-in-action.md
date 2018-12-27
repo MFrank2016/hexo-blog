@@ -378,7 +378,11 @@ date: 2018-12-26 19:55:51
 28. 阻塞队列按照其存储空间的容量是否受限制来划分，可分为有界队列和无界队列。有界队列的存储容量限制是由应用程序制定的，无界队列的最大存储容量为Interger.MAX_VALUE($2^{31} - 1$)个元素。
 
 29. ArrayBlockingQueue的缺点是其内部在实现put、take操作的时候使用的是同一个锁，从而可能导致锁的高争用，进而导致较多的上下文切换。
+
 30. LinkedBlockingQueue既能实现无界队列，也能实现有界队列。
+
 31. LinkedBlockingQueue的优点是其内部在实现put、take操作的时候分别使用了两个显示锁（putLock和takeLock），这降低了锁争用的可能性。LinkedBlockingQueue的内部存储空间是一个链表，而链表节点所需的存储空间是动态分配的，put操作、take操作都会导致链表节点的动态创建和移除，因此LinkedBlockingQueue的缺点是它可能增加垃圾回收的负担。
+
 32. SynchronousQueue可以被看做一种特殊的有界队列。
+
 33. 

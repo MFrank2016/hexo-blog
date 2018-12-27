@@ -63,6 +63,7 @@ category_map:
 	其他: other
 tag_map:
   Java: java
+  Java入门: java-introduction
   Java基础: java-base
   Java进阶: java-advanced
   Java高级: java-senior
