@@ -1,11 +1,16 @@
 ---
-title: Java 集成开发环境—IDEA安装
+title: Java开发环境搭建——IDE
 tags: 
  - Java入门
  - Java
+ - 环境搭建
 categories: 编程
-date: 2018-12-27 17:55:51
+date: 2018-12-28 19:00:04
 ---
+
+> 不相信自己的人 连努力的价值都没有。 --《火影忍者》
+
+## 前言
 
 前面我们已经安装好了JDK，现在Java这个大型游戏已经安装在我们的电脑里了，接下来我们就要准备学习如何玩这个游戏了。
 
@@ -27,9 +32,9 @@ IDE（integrated development enviroment）就是集成开发环境，是用于�
 
 接下来，我们去官网下载IDEA：http://www.jetbrains.com/idea/
 
-![img](./java-ide-1.png)
+{% asset_img java-ide-1.png jdk-ide %}
 
-![img](./java-ide-2.png)
+{% asset_img java-ide-2.png jdk-ide %}
 
 根据自己的系统进行选择安装即可，这里就不分系统进行介绍了，下载的时候，可以选ultimate版，也可以选community版，建议选择ultimate版。
 
@@ -41,23 +46,23 @@ IDE（integrated development enviroment）就是集成开发环境，是用于�
 
 然后开始我们的第一个新手任务——HelloWorld。
 
-![img](./java-ide-3.png)
+{% asset_img java-ide-3.png jdk-ide %}
 
-![img](./java-ide-4.png)
+{% asset_img java-ide-4.png jdk-ide %}
 
-![img](./java-ide-5.png)
+{% asset_img java-ide-5.png jdk-ide %}
 
 创建好以后，右键src文件夹，添加package，名字叫hello，然后在package里添加HelloWorld类
 
-![img](./java-ide-6.png)
+{% asset_img java-ide-6.png jdk-ide %}
 
-![img](./java-ide-7.png)
+{% asset_img java-ide-7.png jdk-ide %}
 
-![img](./java-ide-8.png)
+{% asset_img java-ide-8.png jdk-ide %}
 
 然后在文件里放上代码：
 
-```
+```java
 package hello;
 import java.lang.System;
 
@@ -70,7 +75,7 @@ public class HelloWorld {
 
 点击Run，运行程序，选择HelloWorld，代码就跑起来了。
 
-![img](./java-ide-9.png)
+{% asset_img java-ide-9.png jdk-ide %}
 
 至此，IDE设置完成，我们的第一个项目也完工。
 

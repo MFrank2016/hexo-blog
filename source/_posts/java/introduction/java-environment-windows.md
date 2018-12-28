@@ -1,16 +1,20 @@
 ---
-prev: java-environment
-next: java-environment-mac
-
+title: Java开发环境搭建——Windows篇
+tags: 
+ - Java入门
+ - Java
+ - 环境搭建
+categories: 编程
+date: 2018-12-28 19:00:02
 ---
 
-# Java开发环境搭建——Windows篇
+> 你为了你的正义，我为了我的正义。 -- 《火影忍者》
 
 ## 一、安装JDK
 
 官网下载链接：https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html
 
-![img](./1-jdk-windows.png)
+{% asset_img 1-jdk-windows.png jdk-windows %}
 
 ## 二、配置环境变量
 
@@ -24,15 +28,15 @@ CLASSPATH      配置类库文件的位置
 
 ### 1、我的电脑（右键）-->属性-->高级系统设置
 
- ![img](./2-jdk-windows.png)
+{% asset_img 2-jdk-windows.png jdk-windows %}
 
 ### 2、环境变量-->新建
 
-![img](./3-jdk-windows.png)
+{% asset_img 3-jdk-windows.png jdk-windows %}
 
-![img](./4-jdk-windows.png)
+{% asset_img 4-jdk-windows.png jdk-windows %}
 
-![img](./5-jdk-windows.png)
+{% asset_img 5-jdk-windows.png jdk-windows %})
 
 (1)新建->变量名"JAVA_HOME"，变量值"C:/Java/jdk1.8.0_144"（即JDK的安装路径） 
 
@@ -46,25 +50,23 @@ CLASSPATH      配置类库文件的位置
 
 java命令：
 
-![img](./6-jdk-windows.png)
+{% asset_img 6-jdk-windows.png jdk-windows %}
 
 javac命令：
 
-![img](./7-jdk-windows.png)
+{% asset_img 7-jdk-windows.png jdk-windows %}
 
 java -version命令：
 
-![img](./8-jdk-windows.png)
-
- 
+{% asset_img 8-jdk-windows.png jdk-windows %}
 
 ### 4、在控制台下验证第一个java程序：
 
 右键--》新建--》文本文档
 
-```
+```java
 public class Test {
-    public static void main(String[] args) {    
+    public static void main(String[] args) {
     System.out.println("Hello World!");
     }
 }
@@ -81,6 +83,6 @@ cd /Users/[用户名]/Desktop
 
 输入javac Test.java和java Test命令，即可运行程序（打印出结果“Hello Java”）。
 
-![img](./9-jdk-windows.png)
+{% asset_img 9-jdk-windows.png jdk-windows %}
 
 至此，Java开发环境搭建成功。

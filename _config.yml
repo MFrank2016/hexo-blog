@@ -73,6 +73,7 @@ tag_map:
   并发容器类: concurrent-container
   读书笔记: reading-notes
   摘要: digest
+  环境搭建: enviroment
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date
@@ -122,3 +123,10 @@ jsonContent:
     excerpt: false
     categories: false
     tags: true
+
+githubEmojis:
+  enable: true
+  className: github-emoji
+  unicode: false
+  styles:
+  localEmojis:

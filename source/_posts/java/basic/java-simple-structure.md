@@ -1,10 +1,11 @@
 ---
-prev: java-basic
-next: java-variable
-
+title: Java 程序基本结构
+tags: 
+ - Java基础
+ - Java
+categories: 编程
+date: 2018-12-29 00:02:00
 ---
-
-# Java 程序基本结构
 
 >“No matter how small and unimportant what we are doing may seem, if we do it well, it may soon become the step that will lead us to better things.”				— Channing Pollock, Writer
 >
@@ -12,13 +13,11 @@ next: java-variable
 
 ## 关卡说明
 
->关卡描述：Java程序具有一些固定的形式，本篇将来对此进行简单的说明介绍。
->
->过关条件：理解Java程序的基本组成结构
->
->过关奖励：经验+10
->
->关卡难度：⭐️
+关卡描述：Java程序具有一些固定的形式，本篇将来对此进行简单的说明介绍。
+
+过关条件：理解Java程序的基本组成结构
+
+关卡难度：⭐️
 
 ## 一个简单的程序
 
@@ -85,4 +84,3 @@ System.out.print("这两个数的和为:" + sum);
 Java中，点号是用来调用方法或者使用对象的，如：`System.out.print(...)`表示使用`System.out`对象并调用它的`print`方法。
 
 至此，本篇的Java的基本结构就介绍完毕了，希望通过本篇，你能知道一个简单Java程序的结构是怎样的以及main方法有什么作用。
-

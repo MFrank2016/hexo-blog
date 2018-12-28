@@ -4,12 +4,12 @@ tags:
  - Java入门
  - Java
 categories: 编程
-date: 2018-12-27 17:55:51
+date: 2018-12-28 19:00:06
 ---
 
->过关条件：独立完成第一个Java简易计算器程序
->
->关卡难度：:star:
+> 人都有两面，一面天使，一面恶魔。
+
+## 前言
 
 为了统一风格，也为了增加趣味性，以后的文章都会以关卡的形式进行展示，这样也能让大家明确每一篇的目标，带着目的来阅读会更有方向感。
 
@@ -27,7 +27,7 @@ date: 2018-12-27 17:55:51
 
 ### 输出信息
 
-先来认识一个方法 ` System.out.println() `，这个方法会将你传入的信息输出到控制台中，emmm，什么是控制台？你运行程序后出现的那个黑不拉几的东西就叫做控制台，它是我们与计算机交互的一个最简单原始的方式。
+先来认识一个方法 `System.out.println()`，这个方法会将你传入的信息输出到控制台中，emmm，什么是控制台？你运行程序后出现的那个黑不拉几的东西就叫做控制台，它是我们与计算机交互的一个最简单原始的方式。
 
 来试验一下，还记得如何用idea创建一个类吗？不记得的话翻看一下[这里](java-ide.md)。
 
@@ -45,7 +45,7 @@ public class PrintTest {
 
 然后我们点击运行，或者按键（`ctrl+shift+R`），就能看到下面的输出了：
 
-![](./java-simple-example-1.png)
+{% asset_img java-simple-example-1.png java-example %}
 
 先不要问这个System是个什么东西，只要知道这样可以输出一行信息就行了，需要注意的是这个方法默认会在末尾加一个换行符，如果想要不换行，可以试试 `System.out.print() `。
 
@@ -72,7 +72,7 @@ public class InputTest {
 
 然后再运行一下，并且输入一个数字然后按回车键，这里我输入的是20：
 
-![](./java-simple-example-2.png)
+{% asset_img java-simple-example-2.png java-example %}
 
 如果对于具体的细节还不清楚，没有关系，先照做就好了。
 
@@ -137,9 +137,8 @@ public class SimpleCalculator {
 
 输出如下：
 
-![](./java-simple-example-3.png)
+{% asset_img java-simple-example-3.png java-example %}
 
 这样，我们的简易版计算器就完成了。虽然简单，但还是建议你在自己电脑上实现一次，看代码和写代码是完全不一样的两种体验。
 
 回顾一下本篇，我们设计了一个类`SimpleCalculator`，并编写了一个main方法，并在里面完成了简易版计算器的逻辑设计。也许你对于自己写的东西还有很多疑问，对象是什么？类又是什么含义？Scanner还可以做什么？前面的package有什么作用，import又是在干嘛？别着急，接着看后面的文章，相信你的疑问会一点一点消失。
-

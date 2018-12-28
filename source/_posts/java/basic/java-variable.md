@@ -1,10 +1,11 @@
 ---
-prev: java-simple-structure
-next: java-class
-
+title: Java 变量
+tags: 
+ - Java基础
+ - Java
+categories: 编程
+date: 2018-12-29 00:04:00
 ---
-
-# Java 变量
 
 >**“The superior man makes the difficulty to be overcome his first interest; success comes only later.”**
 >
@@ -14,13 +15,11 @@ next: java-class
 
 ## 关卡说明
 
->关卡描述：变量是Java程序中最常见的内容，是设计Java程序必不可少的部分。
->
->过关条件：理解什么是变量，为什么需要使用变量，以及如何使用它们
->
->过关奖励：经验+10
->
->关卡难度：⭐️
+关卡描述：变量是Java程序中最常见的内容，是设计Java程序必不可少的部分。
+
+过关条件：理解什么是变量，为什么需要使用变量，以及如何使用它们
+
+关卡难度：⭐️
 
 ## 变量
 
@@ -120,4 +119,3 @@ public static void main(String[] args){
 ## 小结
 
 至此，关于变量的介绍就结束了，变量是Java中最重要也是最基础的组成部分，希望你能很好的理解和掌握它。
-

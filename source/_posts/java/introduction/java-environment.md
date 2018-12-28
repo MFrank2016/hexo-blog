@@ -1,10 +1,14 @@
 ---
-prev: java-started
-next: java-environment-windows
-
+title: Java开发环境搭建——概念说明
+tags: 
+ - Java入门
+ - Java
+ - 环境搭建
+categories: 编程
+date: 2018-12-28 19:00:01
 ---
 
-# Java开发环境搭建——概念说明
+> 如果不能忠于自己的心，胜负又有什么价值呢？
 
 ## 说明
 
@@ -29,6 +33,3 @@ JRE 即 Java运行时环境，是运行 Java 程序必不可少的，既然是�
 JDK 是 Java 语言的软件开发工具包，是 Java 开发者所必须的内容，也就是我们之后要部署的东西，主要包含了各种类库和工具，当然也包含了一个JRE。
 
 综上所述，JDK中包含有JRE，JRE中包含有JVM，所以JDK在手，天下我有【手动滑稽】。想要进行Java开发，就必须要部署JDK环境，但如果只是想要运行Java开发的软件，那么安装一个JRE就足够了。
-
-
-
