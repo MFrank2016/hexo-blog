@@ -1,9 +1,12 @@
 ---
-prev: ./object-self-rescue
-next: false
+title: Java中的垃圾回收
+tags: 
+ - 摘要
+ - Java
+ - 多线程
+categories: 阅读
+date: 2018-12-26 19:55:51
 ---
-
-# 垃圾回收
 
 ## 定义
 
