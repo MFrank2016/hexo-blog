@@ -4,9 +4,9 @@
 
 # Site
 title: 弗兰克的猫
-subtitle: 
+subtitle: 做一只特立独行的猫
 description: 为你，千千万万遍
-keywords: Java,微服务,DDD,多线程
+keywords: Java,多线程,微服务,DDD
 author: Frank
 language: zh-CN
 timezone:
@@ -74,6 +74,8 @@ tag_map:
   读书笔记: reading-notes
   摘要: digest
   环境搭建: enviroment
+  总结: reviews
+  面试: interview
 
 # Date / Time format
 ## Hexo uses Moment.js to parse and display date

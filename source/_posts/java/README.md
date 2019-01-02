@@ -6,11 +6,7 @@ sidebar: false
 
 # Java核心技术
 
-::: tip 一言
-
-不忘初心，方得始终。
-
-:::
+> 不忘初心，方得始终。
 
 ## 说明
 
@@ -75,8 +71,6 @@ sidebar: false
 
 [WeakHashMap源码详解](../java/collections/weakhashmap-code-detail.md)
 
-
-
 <LabelBlock>Java引用类型  </LabelBlock>
 
 1. [强引用、软引用、弱引用和虚引用深入探讨](../java/reference/four-kinds-of-reference.md)
@@ -91,4 +85,3 @@ sidebar: false
 10. [PhantomReference源码详解](../java/reference/phantom-reference-code-detail.md)
 11. [FinalReference 与 Finalizer 详解](../java/reference/final-reference-code-detail.md)
 12. [四种引用类型总结](../java/reference/reference-summary.md)
-
