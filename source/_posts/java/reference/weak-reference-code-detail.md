@@ -1,15 +1,15 @@
 ---
-prev: ./soft-reference-code-detail
-next: ./phantom-reference-code-detail
+title: WeakReference源码详解
+tags: 
+ - Java
+ - 引用类型
+categories: 编程
+date: 2018-12-29 20:20:51
 ---
-
-# WeakReference源码详解
 
 ## 定义
 
-::: tip 
 WeakReference是弱引用，该引用不会影响垃圾回收器对对象的回收，不会影响对象的生命周期。
-:::
 
 ## 说明
 

@@ -1,15 +1,15 @@
 ---
-prev: ./reference-queue-code-detail
-next: ./weak-reference-code-detail
+title: SoftReference源码详解
+tags: 
+ - Java
+ - 引用类型
+categories: 编程
+date: 2018-12-29 20:20:51
 ---
-
-# SoftReference源码详解
 
 ## 定义
 
-::: tip 
 SoftReference是软引用，其引用的对象在内存不足的时候会被回收。只有软引用指向的对象称为软可达（softly-reachable）对象。
-:::
 
 ## 说明
 

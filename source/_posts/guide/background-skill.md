@@ -1,12 +1,17 @@
-## <CustomHeader>Java技术篇</CustomHeader>
+---
+title: Java 技术系列文章
+tags: 
+ - Java
+ - 多线程
+categories: 编程
+date: 2017-12-29 19:55:51
+---
 
+## 前言
 
-
-::: tip 说明
 本篇章内容主要介绍Java的各类技术，包括Java的基础部分，容器类，常用类的源码剖析，并发容器，多线程等等。
-:::
 
-<LabelBlock>Java 开发入门篇  </LabelBlock>
+## Java 开发入门篇
 
 1. [Java开发起航篇](../java/introduction/java-started.md)
 2. [Java开发环境搭建——概念说明](../java/introduction/java-environment.md)
@@ -18,7 +23,7 @@
 8. [Java中的package与import](../java/introduction/java-package.md)
 9. [Java入门篇小结](../java/introduction/java-primer-conclusion.md)
 
-<LabelBlock>Java 开发基础篇  </LabelBlock>
+## Java 开发基础篇
 
 1. [Java开发基础篇](../java/basic/java-basic.md)
 2. [Java程序基本结构](../java/basic/java-simple-structure.md)
@@ -49,7 +54,7 @@
 27. 泛型
 28. 集合
 
-<LabelBlock>Java 开发进阶篇  </LabelBlock>
+## Java 开发进阶篇
 
 1. Java开发进阶篇
 2. 线程
@@ -61,409 +66,295 @@
 8. JVM
 9. 
 
-<LabelBlock>Java集合框架  </LabelBlock>
+## Java集合框架
 
 [WeakHashMap源码详解](../java/collections/weakhashmap-code-detail.md)
 
 
 
-<LabelBlock>Java核心技术  </LabelBlock>
+### Java核心技术  
 
 [强引用、软引用、弱引用和虚引用深入探讨](../java/reference/four-kinds-of-reference.md)
 
 
 
-<LabelBlock>Java多线程  </LabelBlock>
+### Java多线程  
 
 
 
-<LabelBlock>Java工具类  </LabelBlock>
+### Java工具类  
 
 
 
-## <CustomHeader>Java Web 开发篇</CustomHeader>
+## Java Web 开发篇
 
 ::: tip 说明
 本篇章内容主要介绍Java Web开发中经常使用到的技术和框架
 :::
 
-<LabelBlock>Java EE  </LabelBlock>
+### Java EE  
 
 
 
-<LabelBlock>Spring  </LabelBlock>
+### Spring  
 
 
 
-<LabelBlock>Spring Boot  </LabelBlock>
+### Spring Boot  
 
 
 
-<LabelBlock>Spring  Security</LabelBlock>
+### Spring  Security
 
 
 
-<LabelBlock>Spring  Webflux</LabelBlock>
+### Spring  Webflux
 
 
 
-<LabelBlock>Mybatis  </LabelBlock>
+### Mybatis  
 
 
 
-<LabelBlock>Hibernate  </LabelBlock>
+### Hibernate  
 
 
 
-<LabelBlock>Spring  Data JPA</LabelBlock>
+### Spring  Data JPA
 
 
 
-## <CustomHeader>架构篇 </CustomHeader>
+## 架构篇 
 
 ::: tip 说明
 本篇章内容主要介绍架构相关的内容
 :::
 
-<LabelBlock>领域驱动设计（Domain-Driven-Design） </LabelBlock>
+### 领域驱动设计（Domain-Driven-Design） 
 
 1. 初识领域驱动
 
-<LabelBlock>分布式架构 </LabelBlock>
+### 分布式架构 
 
-## <CustomHeader>服务器 </CustomHeader>
+## 服务器 
 
 
 
-<LabelBlock>Netty  </LabelBlock>
+### Netty  
 
 
 
-<LabelBlock>Tomcat  </LabelBlock>
+### Tomcat  
 
 
 
-<LabelBlock>Jetty </LabelBlock>
+### Jetty 
 
 
 
-<LabelBlock>Nginx </LabelBlock>
+### Nginx 
 
 
 
-## <CustomHeader>RPC框架 </CustomHeader>
+## RPC框架 
 
 
 
-<LabelBlock>Dubbo  </LabelBlock>
+### Dubbo  
 
 
 
-<LabelBlock>Thrift  </LabelBlock>
+### Thrift  
 
 
 
-<LabelBlock>GRPC  </LabelBlock>
+### GRPC  
 
 
 
-<LabelBlock>SOFARPC  </LabelBlock>
+### SOFARPC  
 
 
 
-<LabelBlock>Motan  </LabelBlock>
+### Motan  
 
 
 
-<LabelBlock>Ribbon  </LabelBlock>
+### Ribbon  
 
 
 
-## <CustomHeader>消息中间件</CustomHeader>
+## 消息中间件
 
 
 
-<LabelBlock>Kafka  </LabelBlock>
+### Kafka  
 
 
 
-<LabelBlock>RocketMQ  </LabelBlock>
+### RocketMQ  
 
 
 
-<LabelBlock>RabbitMQ  </LabelBlock>
+### RabbitMQ  
 
 
 
-<LabelBlock>ActiveMQ  </LabelBlock>
+### ActiveMQ  
 
 
 
-## <CustomHeader>分布式篇 </CustomHeader>
+## 分布式篇 
 
 
 
-<LabelBlock>zookeeper  </LabelBlock>
+### zookeeper  
 
 
 
-<LabelBlock>分布式缓存  </LabelBlock>
+### 分布式缓存  
 
 
 
-<LabelBlock>一致性哈希  </LabelBlock>
+### 一致性哈希  
 
 
 
-<LabelBlock>MyCat  </LabelBlock>
+### MyCat  
 
 
 
-<LabelBlock>Sharding JDBC  </LabelBlock>
+### Sharding JDBC  
 
 
 
-<LabelBlock>Sharding Sphere  </LabelBlock>
+### Sharding Sphere  
 
 
 
-## <CustomHeader>链路跟踪 </CustomHeader>
+## 链路跟踪 
 
 
 
-<LabelBlock>SkyWalking  </LabelBlock>
+### SkyWalking  
 
 
 
-<LabelBlock>Zipkin  </LabelBlock>
+### Zipkin  
 
+### Pinpoint
 
+### CAT
 
-<LabelBlock>Pinpoint </LabelBlock>
+## 配置中心
 
+### Apollo  
 
+### Disconf  
 
-<LabelBlock>CAT </LabelBlock>
+### Spring Cloud Config
 
+## 作业调度
 
+### Elastic Job Lite  
 
-## <CustomHeader>配置中心 </CustomHeader>
+### Elastic Job Cloud  
 
+### Quartz  
 
+### XXL-Job  
 
-<LabelBlock>Apollo  </LabelBlock>
+## 数据库篇
 
+### Redis  
 
+### Mysql  
 
-<LabelBlock>Disconf  </LabelBlock>
+### MongoDB  
 
+### Memcached  
 
+### Neo4J  
 
-<LabelBlock>Spring Cloud Config </LabelBlock>
+### TiDB  
 
+### HikariCP  
 
+### Druid  
 
-## <CustomHeader>作业调度 </CustomHeader>
+## 数据结构与算法
 
+### 数据结构  
 
+### 算法
 
-<LabelBlock>Elastic Job Lite  </LabelBlock>
+### Leecode
 
+## 微服务篇
 
+### Dubbo
 
-<LabelBlock>Elastic Job Cloud  </LabelBlock>
+### Spring Cloud
 
+## Devops
 
+### Linux
 
-<LabelBlock>Quartz  </LabelBlock>
+### Nginx
 
+### Docker
 
+### Swarm
 
-<LabelBlock>XXL-Job  </LabelBlock>
+### kubernetes
 
+## 持续集成与部署
 
+### Jenkins
 
-## <CustomHeader>数据库篇 </CustomHeader>
+### TeamCity
 
+### 自动化测试
 
+## ELK
 
-<LabelBlock>Redis  </LabelBlock>
+### Lucene
 
+### ElasticSearch
 
+### Logstash
 
-<LabelBlock>Mysql  </LabelBlock>
+### Kibana
 
+### Solr
 
+## 数据可视化
 
-<LabelBlock>MongoDB  </LabelBlock>
+### python  
 
+### R
 
+## 大数据
 
-<LabelBlock>Memcached  </LabelBlock>
+### Hadoop
 
+### HBase  
 
+### Hive  
 
-<LabelBlock>Neo4J  </LabelBlock>
+### Spark  
 
+## 流处理
 
+### Spark Streaming 
 
-<LabelBlock>TiDB  </LabelBlock>
+### Flink
 
+### Storming
 
+## 其它
 
-<LabelBlock>HikariCP  </LabelBlock>
-
-
-
-<LabelBlock>Druid  </LabelBlock>
-
-
-
-## <CustomHeader>数据结构与算法</CustomHeader>
-
-
-
-<LabelBlock>数据结构  </LabelBlock>
-
-
-
-<LabelBlock>算法  </LabelBlock>
-
-
-
-<LabelBlock>Leecode  </LabelBlock>
-
-
-
-## <CustomHeader>微服务篇 </CustomHeader>
-
-
-
-<LabelBlock>Dubbo  </LabelBlock>
-
-
-
-<LabelBlock>Spring Cloud </LabelBlock>
-
-
-
-## <CustomHeader>Devops</CustomHeader>
-
-
-
-<LabelBlock>Linux </LabelBlock>
-
-
-
-<LabelBlock>Nginx </LabelBlock>
-
-
-
-<LabelBlock>Docker </LabelBlock>
-
-
-
-<LabelBlock>Swarm </LabelBlock>
-
-
-
-<LabelBlock>kubernetes </LabelBlock>
-
-
-
-## <CustomHeader>持续集成与部署</CustomHeader>
-
-
-
-<LabelBlock>Jenkins </LabelBlock>
-
-
-
-<LabelBlock>TeamCity </LabelBlock>
-
-
-
-<LabelBlock>自动化测试 </LabelBlock>
-
-
-
-## <CustomHeader>ELK</CustomHeader>
-
-
-
-<LabelBlock>Lucene </LabelBlock>
-
-
-
-<LabelBlock>ElasticSearch </LabelBlock>
-
-
-
-<LabelBlock>Logstash </LabelBlock>
-
-
-
-<LabelBlock>Kibana </LabelBlock>
-
-<LabelBlock>Solr </LabelBlock>
-
-
-
-## <CustomHeader>数据可视化</CustomHeader>
-
-
-
-<LabelBlock>python  </LabelBlock>
-
-
-
-<LabelBlock>R </LabelBlock>
-
-
-
-## <CustomHeader>大数据</CustomHeader>
-
-
-
-<LabelBlock>Hadoop </LabelBlock>
-
-
-
-<LabelBlock>HBase  </LabelBlock>
-
-
-
-<LabelBlock>Hive  </LabelBlock>
-
-
-
-<LabelBlock>Spark  </LabelBlock>
-
-
-
-## <CustomHeader>流处理</CustomHeader>
-
-
-
-<LabelBlock>Spark Streaming </LabelBlock>
-
-
-
-<LabelBlock>Flink </LabelBlock>
-
-
-
-<LabelBlock>Storming </LabelBlock>
-
-
-
-## <CustomHeader>其它</CustomHeader>
-
-
-
-<LabelBlock>UML</LabelBlock>
-
-
+### UML
 
 <img src="8101.png"/>
 

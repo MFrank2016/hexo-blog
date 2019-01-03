@@ -1,10 +1,10 @@
 ---
-sidebar: false
-
-
+title: Java核心技术
+tags: 
+ - Java
+categories: 编程
+date: 2018-12-29 20:20:51
 ---
-
-# Java核心技术
 
 > 不忘初心，方得始终。
 

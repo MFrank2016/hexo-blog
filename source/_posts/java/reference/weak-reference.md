@@ -1,15 +1,15 @@
 ---
-prev: ./soft-reference
-next: ./phantom-reference
+title: 弱引用
+tags: 
+ - Java
+ - 引用类型
+categories: 编程
+date: 2018-12-29 19:57:51
 ---
-
-# 弱引用
 
 ## 定义
 
-::: tip 
 弱引用是使用WeakReference创建的引用，弱引用也是用来描述非必需对象的，它是比软引用更弱的引用类型。在发生GC时，只要发现弱引用，不管系统堆空间是否足够，都会将对象进行回收。
-:::
 
 ## 说明
 

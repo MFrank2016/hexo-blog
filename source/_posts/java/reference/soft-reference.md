@@ -1,15 +1,15 @@
 ---
-prev: ./strong-reference
-next: ./weak-reference
+title: 软引用
+tags: 
+ - Java
+ - 引用类型
+categories: 编程
+date: 2018-12-29 20:20:51
 ---
-
-# 软引用
 
 ## 定义
 
-::: tip 
 软引用是使用SoftReference创建的引用，强度弱于强引用，被其引用的对象在内存不足的时候会被回收，不会产生内存溢出。
-:::
 
 ## 说明
 

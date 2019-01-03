@@ -1,8 +1,13 @@
-# WeakHashMap源码详解
+---
+title: WeakHashMap源码详解
+tags: 
+ - Java
+ - Java集合
+categories: 编程
+date: 2019-01-03 23:10:00
+---
 
-::: tip
-源码详解系列均基于`JDK8`进行解析
-:::
+> 源码详解系列均基于`JDK8`进行解析
 
 ## 说明
 
@@ -24,9 +29,7 @@
 
 其实这个秘密就在于[弱引用](../reference/weak-reference.md)，WeakHashMap中的key是间接保存在弱引用中的，所以当key没有被继续使用时，就可能会在GC的时候被回收掉。
 
-::: warning 
 只有key对象是使用弱引用保存的，value对象实际上仍旧是通过普通的强引用来保持的，所以应该确保value不会直接或者间接的保持其对应key的强引用，因为这样会阻止key被回收。
-:::
 
 如果对于引用类型不熟悉的话，可以先阅读[这篇文章](../reference/four-kinds-of-reference.md)。
 
@@ -34,7 +37,7 @@
 
 ## 继承结构
 
-![weakhashmap-1](./weakhashmap-1.png)
+![weakhashmap-1](weakhashmap-1.png)
 
 WeakHashMap并不是继承自HashMap，而是继承自AbstractMap，跟HashMap的继承结构差不多。
 
@@ -42,7 +45,7 @@ WeakHashMap并不是继承自HashMap，而是继承自AbstractMap，跟HashMap�
 
 WeakHashMap中的数据结构是数组+链表的形式，这一点跟HashMap也是一致的，但不同的是，在JDK8中，当发生较多key冲突的时候，HashMap中会由链表转为红黑树，而WeakHashMap则一直使用链表进行存储。
 
-![weakhashmap-1](./weakhashmap-4.png)
+![weakhashmap-1](weakhashmap-4.png)
 
 ## 成员变量
 
@@ -153,7 +156,7 @@ private static class Entry<K,V> extends WeakReference<Object> implements Map.Ent
 
 Entry继承自WeakReference，继承关系图如下：
 
-![weakhashmap-1](./weakhashmap-2.png)
+![weakhashmap-1](weakhashmap-2.png)
 
 再来看看Entry中的内容：
 

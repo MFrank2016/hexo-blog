@@ -1,6 +1,11 @@
 ---
-prev: README
-next: false
+title: 【LeetCode】Design-Linked-List
+tags: 
+ - Java
+ - 算法
+ - LeetCode
+categories: 编程
+date: 2018-12-29 00:01:00
 ---
 
 # Design-Linked-List

@@ -1,15 +1,15 @@
 ---
-prev: ./four-kinds-of-reference
-next: ./soft-reference
+title: 强引用
+tags: 
+ - Java
+ - 引用类型
+categories: 编程
+date: 2018-12-29 19:56:51
 ---
-
-# 强引用
 
 ## 定义
 
-::: tip 
 强引用是使用最普遍的引用。如果一个对象具有强引用，那垃圾回收器宁愿抛出OOM（OutOfMemoryError）也不会回收它。
-:::
 
 ## 说明
 

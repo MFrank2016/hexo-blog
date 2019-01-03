@@ -1,9 +1,13 @@
 ---
-prev: ./reachable
-next: ./object-self-rescue
+title: HotSpot虚拟机如何实现可达性算法
+tags: 
+ - Java
+ - 虚拟机
+categories: 编程
+date: 2018-12-27 19:55:51
 ---
 
-# HotSpot虚拟机如何实现可达性算法
+## 前言
 
 Java中的主流虚拟机HotSpot采用可达性分析算法来确定一个对象的状态，那么HotSpot是如何实现该算法的呢？
 

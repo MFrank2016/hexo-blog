@@ -1,4 +1,8 @@
-# 读书笔记
+---
+title: 读书笔记系列文章
+categories: 阅读
+date: 2018-12-26 19:55:51
+---
 
 ## 说明
 
@@ -18,4 +22,3 @@
 1. [《Java多线程编程实战指南》（核心篇）](./Java-Multithread-Programming-Guide-In-Action.md)
 2. 《Java并发编程实战》
 3. 《Java并发编程的艺术》
-

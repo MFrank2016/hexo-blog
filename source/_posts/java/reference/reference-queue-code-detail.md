@@ -1,15 +1,15 @@
 ---
-prev: ./reference-code-detail
-next: ./soft-reference-code-detail
+title: ReferenceQueue源码详解
+tags: 
+ - Java
+ - 引用类型
+categories: 编程
+date: 2018-12-30 20:10:51
 ---
-
-# ReferenceQueue源码详解
 
 ## 定义
 
-::: tip 
-ReferenceQueue是引用队列，用于存放待回收的引用对象。
-:::
+ReferenceQueue是引用队列，用于存放待回收的引用对象.
 
 ## 说明
 
@@ -281,12 +281,3 @@ public class TestB {
 + ReferenceQueue是用来保存需要关注的Reference队列
 + ReferenceQueue内部实现实际上是一个栈
 + ReferenceQueue可以用来进行数据监控，资源释放等
-
-
-
-
-
-
-
-
-

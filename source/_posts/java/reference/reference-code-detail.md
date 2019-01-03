@@ -1,9 +1,11 @@
 ---
-prev: ./phantom-reference
-next: ./reference-queue-code-detail
+title: Reference源码详解
+tags: 
+ - Java
+ - 引用类型
+categories: 编程
+date: 2018-12-29 20:10:51
 ---
-
-# Reference源码详解
 
 ![Reference-relastionship](./reference-1.png)
 

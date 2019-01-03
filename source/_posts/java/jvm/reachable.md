@@ -1,15 +1,14 @@
 ---
-prev: ./memory-leak
-next: ./reachable-in-hotspot
+title: 可达性
+tags: 
+ - Java
+categories: 编程
+date: 2018-12-28 19:55:51
 ---
-
-# 可达性
 
 ## 定义
 
-::: tip 
 Java中，一个对象的可达性（Reachable）是指从一系列GC Roots的对象出发，从这些节点往下搜索，搜索时走过的路径称为引用链（Reference Chain），当一个对象不在任何GC Roots的引用链中时，则表示此对象是不可到达的，将会被判定为可回收对象。
-:::
 
 ## 说明
 
@@ -27,7 +26,7 @@ Java中，一个对象的可达性（Reachable）是指从一系列GC Roots的�
 
 垃圾回收，回收的自然是“垃圾”，那么“垃圾”的判断标准是什么？在Java中，使用的是可达性分析算法，也就是根据对象的可达性来判断它是否该被回收。当内存足够时，如果一个对象是弱可达、虚可达或者不可达的，那么它就会判定为可回收对象。如果内存不足时，那么软可达对象也会纳入回收范围之内。
 
-![accessibility1](./accessibility1.jpg)
+{% asset_img accessibility1.png accessibility %}
 
 ## GC Roots
 
@@ -42,9 +41,9 @@ Java中，一个对象的可达性（Reachable）是指从一系列GC Roots的�
 
 ## 可达性判断
 
-​	JVM在进行GC时，判断一个对象是否存在引用，是从根引用GC Roots开始去标识，到达同一个对象的路径有时可能会有多条，如下图所示： 
+JVM在进行GC时，判断一个对象是否存在引用，是从根引用GC Roots开始去标识，到达同一个对象的路径有时可能会有多条，如下图所示： 
 
-![accessibility1](./accessibility2.png)
+{% asset_img accessibility2.png accessibility %}
 
 此时，JVM判断的标准是：
 
@@ -56,4 +55,3 @@ Java中，一个对象的可达性（Reachable）是指从一系列GC Roots的�
 如果仅仅存在一个路径对Obj4有引用时，比如现在只剩1->6,那么根对象到Obj4的引用就是以最弱的为准，就是SoftReference引用,Obj4就是软可达（softly-reachable）对象。
 
 如果还想了解在HotSpot虚拟机中是如何实现可达性分析算法的话，可以点[这里](./reachable-in-hotspot.md)。
-

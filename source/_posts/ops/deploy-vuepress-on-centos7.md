@@ -1,10 +1,12 @@
 ---
-sidebar: auto
-
-
+title: 在centos7 上部署 vuepress
+tags: 
+ - 环境搭建
+categories: 编程
+date: 2018-12-29 00:01:00
 ---
 
-# 在centos7 上部署 vuepress
+## 前言
 
 > vuepress是一款十分优秀简洁的文档生成器，可以根据目录下的md文档自动生成对应的html文件，界面简洁大方。每一个由 VuePress 生成的页面都带有预渲染好的 HTML，也因此具有非常好的加载性能和搜索引擎优化（SEO）。本文将介绍如何在CentOS7环境下部署vuepress。
 
@@ -162,7 +164,3 @@ vuepress build
 ## 六、调试部署
 
 此时静态网页已经生成在了**docs/.vuepress/dist**目录下，可以先开启调试模式，然后使用ftp等软件先对服务器进行远程连接，修改docs下面的文档，每次修改上传后，会自动重新编译，当然整个过程需要一两分钟时间，这取决于服务器的性能。调整到合适的程度即可将其移动到nginx或者apache相应目录下即可。
-
-
-
-

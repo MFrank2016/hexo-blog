@@ -1,13 +1,10 @@
 ---
-prev: false
-next: false
-
-
-
-
+title: 初识领域驱动
+tags: 
+ - 领域驱动
+categories: 编程
+date: 2018-12-29 00:01:00
 ---
-
-# 初识领域驱动
 
 ## 背景说明
 
@@ -34,4 +31,3 @@ next: false
 2、《实现领域驱动设计》 Vaughn Vernon
 
 3、[DDD理论学习系列——案例及目录](https://www.jianshu.com/p/6e2917551e63)
-

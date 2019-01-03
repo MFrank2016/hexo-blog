@@ -1,7 +1,11 @@
 ---
-prev: false
-next: Design-Linked-List
-
+title: LeetCode 题解
+tags: 
+ - 算法
+ - Java
+ - LeetCode
+categories: 编程
+date: 2018-12-29 00:01:00
 ---
 
 # LeetCode 题解

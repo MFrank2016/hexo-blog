@@ -1,11 +1,12 @@
 ---
-prev: false
-next: false
-
-
+title: 领域驱动设计大纲
+tags: 
+ - 领域驱动
+categories: 编程
+date: 2018-12-29 00:01:00
 ---
 
-# 领域驱动设计大纲
+## 前言
 
 领域驱动设计（Domain-Driven-Design）是一种十分优秀的系统设计思想，本系列将从理论和实战两个方面来对DDD进行介绍，以下是大纲。
 
@@ -24,5 +25,3 @@ next: false
 6. MVC与DDD
 7. 六边形架构
 8. 领域驱动设计有什么缺点
-9. 
-

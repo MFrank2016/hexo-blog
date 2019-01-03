@@ -1,12 +1,15 @@
 ---
-prev: ./final-reference-code-detail
-next: ./four-kinds-of-reference
+title: 四种引用类型总结
+tags: 
+ - Java
+ - 引用类型
+categories: 编程
+date: 2018-12-29 20:20:51
 ---
-# 四种引用类型总结
 
-::: tip 
+## 四种引用类型总结
+
 引用级别：强引用 > 软引用 > 弱引用 > 虚引用
-:::
 
 ## 理解
 

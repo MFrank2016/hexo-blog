@@ -1,15 +1,15 @@
 ---
-prev: ./weak-reference
-next: ./reference-code-detail
+title: 虚引用
+tags: 
+ - Java
+ - 引用类型
+categories: 编程
+date: 2018-12-29 19:57:51
 ---
-
-# 虚引用
 
 ## 定义
 
-::: tip 
 虚引用是使用PhantomReference创建的引用，虚引用也称为幽灵引用或者幻影引用，是所有引用类型中最弱的一个。一个对象是否有虚引用的存在，完全不会对其生命周期构成影响，也无法通过虚引用获得一个对象实例。
-:::
 
 ## 说明
 

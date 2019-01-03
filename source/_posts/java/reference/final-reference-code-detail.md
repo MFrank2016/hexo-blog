@@ -1,6 +1,10 @@
 ---
-prev: ./phantom-reference-code-detail
-next: ./reference-summary
+title: FinalReference 与 Finalizer 详解
+tags: 
+ - Java
+ - 引用类型
+categories: 编程
+date: 2018-12-29 19:55:51
 ---
 
 # FinalReference 与 Finalizer 详解

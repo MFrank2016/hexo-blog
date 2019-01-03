@@ -1,15 +1,15 @@
 ---
-prev: ./weak-reference-code-detail
-next: ./final-reference-code-detail
+title: PhantomReference源码详解
+tags: 
+ - Java
+ - 引用类型
+categories: 编程
+date: 2018-12-29 20:20:51
 ---
-
-# PhantomReference源码详解
 
 ## 定义
 
-::: tip 
 PhantomReference是虚引用，该引用不会影响不会影响对象的生命周期，也无法从虚引用中获取对象实例。
-:::
 
 ## 说明
 
