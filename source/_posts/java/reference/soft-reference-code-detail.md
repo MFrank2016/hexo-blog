@@ -85,11 +85,11 @@ The default value is 1000 ms per megabyte, which means that a soft reference wil
 
 假设，堆内存为512Mb，并且可用内存为400Mb，我们创建一个object A，用软引用创建一个引用A的缓存对象cache，以及另一个object B 引用object A。此时，由于B持有A的强引用，所以对象A是强可达并且不会被垃圾回收器回收。
 
-![soft-reference-1](./soft-reference-3.png)
+{% asset_img soft-reference-3.png soft-reference-3 %}
 
 如果B被删除了，那么A仅剩下一个软引用cache引用它，如果A在400s内没有再次被强引用关联，它将会在超时后被删除。
 
-![soft-reference-2](./soft-reference-2.png)
+{% asset_img soft-reference-2.png soft-reference-2 %}
 
 下面是一个控制软引用的栗子：
 

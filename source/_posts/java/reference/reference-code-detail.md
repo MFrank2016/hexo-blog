@@ -7,31 +7,26 @@ categories: 编程
 date: 2018-12-29 20:10:51
 ---
 
-![Reference-relastionship](./reference-1.png)
+{% asset_img reference-1.png reference-1 %}
 
 ## 定义
 
-::: tip 
-Reference是所有引用类型的父类，定义了引用的公共行为和操作。
-:::
-
-::: warning 说明
-reference指代引用对象本身，referent指代reference引用的对象，下文介绍会以reference，referent形式出现。
-:::
+> 说明
+> Reference是所有引用类型的父类，定义了引用的公共行为和操作。
+> reference指代引用对象本身，referent指代reference引用的对象，下文介绍会以reference，referent形式出现。
 
 ## 说明
 
 Reference类与垃圾回收是密切配合的，所以该类不能被直接子类化。简单来讲，Reference的继承类都是经过严格设计的，甚至连成员变量的先后顺序都不能改变，所以在代码中直接继承Reference类是没有任何意义的。但是可以继承Reference类的子类。
 
-::: tip 例如
-Finalizer 继承自 FinalReference，Cleaner 继承自 PhantomReference
-:::
+> 例如
+> Finalizer 继承自 FinalReference，Cleaner 继承自 PhantomReference
 
 ## 构造函数
 
 Reference类中有两个构造函数，一个需要传入引用队列，另一个则不需要。
 
-这个队列的意义在于增加一种判断机制，可以在外部通过监控这个队列来判断对象是否被回收。如果一个对象即将被回收，那么引用这个对象的reference对象就会被放到这个队列中。通过监控这个队列，就可以取出这个reference后再进行一些善后处理。<img src="./0003.png" width="50"/>
+这个队列的意义在于增加一种判断机制，可以在外部通过监控这个队列来判断对象是否被回收。如果一个对象即将被回收，那么引用这个对象的reference对象就会被放到这个队列中。通过监控这个队列，就可以取出这个reference后再进行一些善后处理。<img src="/images/0003.png" width="50"/>
 
 如果没有这个队列，就只能通过不断地轮询reference对象，通过get方法是否返回null( phantomReference对象不能这样做，其get方法始终返回null，因此它只有带queue的构造函数 )来判断对象是否被回收。
 
@@ -99,9 +94,8 @@ pending：等待添加到queue中的元素链表。注意这是一个静态对�
 private static Reference<Object> pending = null;
 ```
 
-::: warning 说明
-queue队列使用next来查找下一个reference，pending队列使用discovered来查找下一个reference。
-:::
+> 说明
+> queue队列使用next来查找下一个reference，pending队列使用discovered来查找下一个reference。
 
 ## Reference状态
 
@@ -150,11 +144,11 @@ Inactive：queue == ReferenceQueue.NULL; next == this.
 
 如果next != null，queue != ReferenceQueue.NULL && queu != ReferenceQueue.ENQUEUED ，则reference处于Pending状态。
 
-![Reference-relastionship](./reference-2.png)
+{% asset_img reference-2.png Reference-relastionship %}
 
 ## ReferenceHandler线程
 
-Reference类中有一个特殊的线程叫ReferenceHandler，专门处理那些pending链表中的引用对象。ReferenceHandler类是Reference类的一个静态内部类，继承自Thread，所以这条线程就叫它ReferenceHandler线程。<img src="./0019.png" width="50"/>
+Reference类中有一个特殊的线程叫ReferenceHandler，专门处理那些pending链表中的引用对象。ReferenceHandler类是Reference类的一个静态内部类，继承自Thread，所以这条线程就叫它ReferenceHandler线程。<img src="/images/0019.png" width="50"/>
 
 ```java
 private static class ReferenceHandler extends Thread {

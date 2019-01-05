@@ -174,7 +174,7 @@ private Reference<? extends T> reallyPoll() {
 }
 ```
 
-poll方法将头结点弹出。嗯，没错，弹出的是头结点而不是尾节点，名义上，它叫ReferenceQueue，实际上是一个ReferenceStack（滑稽）。惊不惊喜，意不意外。<img src="./0001.png" width="50"/>
+poll方法将头结点弹出。嗯，没错，弹出的是头结点而不是尾节点，名义上，它叫ReferenceQueue，实际上是一个ReferenceStack（滑稽）。惊不惊喜，意不意外。<img src="/images/0001.png" width="50"/>
 
 ```java
 /**

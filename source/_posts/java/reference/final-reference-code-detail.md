@@ -13,9 +13,9 @@ date: 2018-12-29 19:55:51
 
 ？？？说好只有四种引用呢，怎么又跑出来一个FinalReference？还有一个奇奇怪怪的Finalizer？
 
-<img src="./0012.png"/>
+<img src="/images/0012.png"/>
 
-别别别，把枪放下，事情不是你想的那样。<img src="./0190.png" width="40"/>
+别别别，把枪放下，事情不是你想的那样。<img src="/images/0190.png" width="40"/>
 
 FinalReference虽然也是继承自Reference类，但是并不能直接使用它，因为它是包可见的。
 
@@ -37,7 +37,7 @@ FinalReference由JVM来实例化，JVM会对那些实现了Object中finalize()�
 
 ## Finalizer源码解析
 
-在java.lang.ref包下，还有最后一个没有说到类，也就是FinalReference的子类——Finalizer，一听就是个专门给人善后的家伙。来看看它长什么样。<img src="./06.png" width="40"/>
+在java.lang.ref包下，还有最后一个没有说到类，也就是FinalReference的子类——Finalizer，一听就是个专门给人善后的家伙。来看看它长什么样。<img src="/images/06.png" width="40"/>
 
 ```java
 final class Finalizer extends FinalReference<Object> {
@@ -365,7 +365,7 @@ private static void forkSecondaryFinalizer(final Runnable proc) {
 
 对于这些即将被回收掉的f对象，并不会在最近的一次GC中马上被回收释放掉，而是会延迟到下一个或几个GC时才会被真正回收。finalize方法无法在GC过程中执行，第一次GC只会讲其放入队列中去，由FinalizerThread去轮询执行。
 
-所以，不要在运行期间不断创建f对象，否则内存泄漏将常伴你左右。<img src="./0190.png" width="40"/>
+所以，不要在运行期间不断创建f对象，否则内存泄漏将常伴你左右。<img src="/images/0190.png" width="40"/>
 
 而且不同f对象的Finalizer的执行顺序并不是确定的，取决于它们被加入f对象链表的时间，而且从上面的源码分析中应该能知道，unfinalized链表更像是一个栈，不像链表那样先进先出，当既有对象进入，又有对象移出时，你无法知道这些Finalizer对象的具体执行顺序，所以不要设计依赖Finalizer执行顺序的程序。
 
@@ -373,7 +373,7 @@ private static void forkSecondaryFinalizer(final Runnable proc) {
 
 ### Finalizer 应用场景
 
-好嘛，叽叽歪歪介绍了这么一大堆，结果都在说Finalizer怎么怎么不好，怎么怎么会出错。那要它何用？<img src="./0012.png" width="50"/>
+好嘛，叽叽歪歪介绍了这么一大堆，结果都在说Finalizer怎么怎么不好，怎么怎么会出错。那要它何用？<img src="/images/0012.png" width="50"/>
 
 嗯，自有妙用。Finalizer一个比较适合的场景便是释放nativa方法中申请的内存，如果一个对象调用了本地方法，并且申请了内存（例如C中的malloc方法），那么可以在这个对象的finalize方法中调用native方法进行内存释放（如free方法），因为在这种情况下，本地方法申请的内存不会被垃圾回收器自动回收。
 
