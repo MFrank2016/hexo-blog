@@ -60,7 +60,7 @@ category_map:
   生活: life
   阅读: reading
   感悟: thinking
-	其他: other
+  其他: other
 tag_map:
   Java: java
   Java入门: java-introduction

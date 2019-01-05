@@ -131,6 +131,8 @@ class Solution {
 
 一下降到了9ms，效率大大提升，击败85%的用户，嗯，看来效果确实很显著。
 
-本题链接：https://leetcode-cn.com/problems/two-sum/solution/
+[本题中文链接](https://leetcode-cn.com/problems/two-sum/solution/)
+
+[本题英文链接](https://leetcode.com/problems/two-sum/solution/)
 
 如果你有更好的想法，也欢迎留言交流讨论~
