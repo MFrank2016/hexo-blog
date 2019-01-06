@@ -14,11 +14,11 @@ date: 2018-12-26 19:55:51
 
 ## 非技术类书籍
 
-1. [《习惯的力量》](.\The-Power-of-Habit.md)
+1. [《习惯的力量》](./The-Power-of-Habit.html)
 2. 
 
 ## 技术类书籍
 
-1. [《Java多线程编程实战指南》（核心篇）](./Java-Multithread-Programming-Guide-In-Action.md)
+1. [《Java多线程编程实战指南》（核心篇）](./Java-Multithread-Programming-Guide-In-Action.html)
 2. 《Java并发编程实战》
-3. 《Java并发编程的艺术》
+3. [《Java并发编程的艺术》](./the-art-of-java-multithread-notes.html)
