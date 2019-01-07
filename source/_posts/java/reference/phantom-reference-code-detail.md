@@ -32,4 +32,4 @@ public class PhantomReference<T> extends Reference<T> {
 
 可以看到，get方法直接返回null，有一个两个参数的构造方法，传入被引用的对象和引用队列。
 
-<img src="/images/06.png" width="40"/>那么，这篇也先告一段落吧。 
+<img src="/images/06.png" width="40"/>那么，这篇也先告一段落吧。

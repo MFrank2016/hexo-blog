@@ -391,12 +391,3 @@ private static void forkSecondaryFinalizer(final Runnable proc) {
 + Finalizer对象的处理是在GC时进行的，如果没有触发GC就不会触发对Finalizer对象的处理，unfinalized队列中的对象也就不会被放入队列，其finalize方法也不会被执行
 + 依赖f类对象的finalize执行顺序和执行时间的程序很可能会出现内存泄漏
 + 因为f对象的finalize方法迟迟没有执行，有可能会导致大部分f对象进入到old分代，此时容易导致老年代的GC，甚至Full GC，会使GC暂停时间明显变长
-
-
-
-
-
-### 
-
-
-
