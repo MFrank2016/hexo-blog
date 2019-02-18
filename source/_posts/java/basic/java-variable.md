@@ -1,5 +1,5 @@
 ---
-title: 【Java基础篇】Java 变量
+title: 【Java基础篇】二、Java 变量
 tags: 
  - Java基础
  - Java
