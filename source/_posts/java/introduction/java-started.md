@@ -1,5 +1,5 @@
 ---
-title: Java 开发入门篇 - 起航
+title: 【Java入门篇】起航
 tags: 
  - Java入门
  - Java

@@ -1,5 +1,5 @@
 ---
-title: Java入门篇小结
+title: 【Java入门篇】小结
 tags: 
  - Java入门
  - Java

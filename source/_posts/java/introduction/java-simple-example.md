@@ -1,5 +1,5 @@
 ---
-title: Java简单示例
+title: 【Java入门篇】六、Java简单示例
 tags: 
  - Java入门
  - Java

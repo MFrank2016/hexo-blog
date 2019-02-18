@@ -20,8 +20,7 @@ date: 2017-12-29 19:55:51
 5. [Java 集成开发环境—IDEA安装](../java/introduction/java-ide.md)
 6. [Java开发简介](../java/introduction/java-introduction.md)
 7. [Java简单示例](../java/introduction/java-simple-example.md)
-8. [Java中的package与import](../java/introduction/java-package.md)
-9. [Java入门篇小结](../java/introduction/java-primer-conclusion.md)
+8. [Java入门篇小结](../java/introduction/java-primer-conclusion.md)
 
 ## Java 开发基础篇
 
