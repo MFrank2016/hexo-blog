@@ -206,6 +206,7 @@ curMatch = i < s.length() && s[i] == p[j] || p[j] == '.';
 
 接下来描述一下后续的计算过程：
 
+```java
 1. 求match(0,0): i = 0; j = 0; curMatch = false;
 2. p[1] == * -> match(0,0) = match(0,2) || false && match(1,0)
 3. 转化为求子问题match(0,2)和match(1,0)
@@ -233,6 +234,7 @@ curMatch = i < s.length() && s[i] == p[j] || p[j] == '.';
 25. 回溯到第2步。
 26. match(0,0) = true;
 27. 问题解决
+```
 
 {% asset_img solution2-2.png solution2 %}
 
@@ -289,6 +291,7 @@ class Solution {
 
 还有一种方法，叫做自底向上方法，也是动态规划中的一种，这种方法的思路其实很简单粗暴，即从最后一个字符开始反向匹配，还是以刚才的栗子为例，从i = 3, j = 5 开始依次往左往上循环计算，match(3,5) == true，核心的逻辑并没有变。因为最边缘的值的匹配都是可以直接计算出来的，下面推算其中的一部分：
 
+```java
 1. match(3,5) = true;
 2. 求match(3,4): i = 3; j = 4; curMatch = false;
 3. j + 1 == 5 >= p.length() -> match(3,4) = curMatch = false;
@@ -306,6 +309,7 @@ class Solution {
 15. p[1] == * -> match(3,0) = match(3,2) || false && match(4,0)
 16. match(3,0) = false;
 17. ....
+```
 
 剩下的部分可以自行推导。代码如下：
 
