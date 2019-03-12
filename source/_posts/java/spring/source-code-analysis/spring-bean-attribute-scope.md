@@ -36,7 +36,7 @@ public class Singleton{
 
     public static Singleton getInstance(){
         if (FRANK == null){
-            synchronized(){
+            synchronized(this){
                 if (FRANK == null) FRANK = new Singleton();
             }
         }

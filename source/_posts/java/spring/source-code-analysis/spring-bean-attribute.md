@@ -14,9 +14,9 @@ categorys:
 
 另外，说明一下，使用的Spring源码版本为当前最新版本`5.2.0.BUILD-SNAPSHOT`，跟老版本中的相关代码可能会有少数差异。
 
-## Spring中对属性标签的解析
+## bean标签中属性的解析 
 
-解析Spring中bean的属性标签的源码位置位于类：`BeanDefinitionParserDelegate` 的 `parseBeanDefinitionAttributes` 方法中，源码如下：
+Spring中对bean标签属性解析的代码位于类：BeanDefinitionParserDelegate 的 parseBeanDefinitionAttributes 方法中，源码如下
 
 ```java
 public AbstractBeanDefinition parseBeanDefinitionAttributes(Element ele, String beanName,
