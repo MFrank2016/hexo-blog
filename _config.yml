@@ -84,6 +84,7 @@ tag_map:
   Spring: spring
   源码解读: source-code-analysis
   动态规划: dynamic-programming
+  背包问题: knapsack-problem
   
 
 # Date / Time format
