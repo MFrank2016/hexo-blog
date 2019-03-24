@@ -1,0 +1,9 @@
+language: node_js
+node_js: --lts
+before_script:
+  - git config user.name "mfrank2016"
+  - git config user.email "337603640@qq.com"
+  - sed -i'' "s~https://github.com/MFrank2016/breeze-blog.git~https://${GITHUB_ACCESS_TOKEN}@github.com/MFrank2016/breeze-blog.git~" _config.yml
+script:
+  - hexo g
+  - hexo d
