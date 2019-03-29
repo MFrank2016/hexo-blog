@@ -175,7 +175,7 @@ class Solution {
 
 这次，连编译都不通过了，emmmm，看来不准用`BigInteger`这个类。
 
-{% asset_img solution-2.png solution-2 %}
+{% asset_img solution-3.png solution-3 %}
 
 ## 常规解法
 

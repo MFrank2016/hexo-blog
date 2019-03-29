@@ -81,6 +81,10 @@ tag_map:
   引用类型: reference-type
   领域驱动: ddd
   算法: algorithm
+  Spring: spring
+  源码解读: source-code-analysis
+  动态规划: dynamic-programming
+  背包问题: knapsack-problem
   
 
 # Date / Time format
