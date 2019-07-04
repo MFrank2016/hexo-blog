@@ -61,6 +61,7 @@ category_map:
   阅读: reading
   感悟: thinking
   其他: other
+  数据库: database
 tag_map:
   Java: java
   Java入门: java-introduction
@@ -88,6 +89,8 @@ tag_map:
   爬虫: spider
   Python: python
   常见问题: problem
+  索引: index
+  测试: test
 
   
 
