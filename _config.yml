@@ -88,6 +88,8 @@ tag_map:
   爬虫: spider
   Python: python
   常见问题: problem
+  数据库: database
+  消息队列: mq
 
   
 
