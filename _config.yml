@@ -91,6 +91,8 @@ tag_map:
   常见问题: problem
   索引: index
   测试: test
+  数据库: database
+  消息队列: mq
 
   
 
