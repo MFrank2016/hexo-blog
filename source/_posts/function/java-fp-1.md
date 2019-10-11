@@ -34,15 +34,56 @@ Java8 中新增的 `函数式接口` 、 `流操作` 和 `lamada表达式` 确�
 
 既然它是一种编程范式，就与特定语言无关，并非某种语言所特有的性质。函数式编程的主角是“函数”，这里说的函数并不是指普通的方法，可以用方法来表示一个函数，但函数本身有更加广泛的含义，也有更加合适的表示形式，后面文章中会进行说明。
 
+### 函数式编程的特点
+
 函数式编程有以下特点：
 
-* 函数是一等公民
-  * 即函数与其他数据类型一样，处于平等的地位，可以把函数赋值给其他变量，也可以当做参数进行传递，或者作为其他函数的返回值。
-* 没有副作用
-  * 除了计算结果，调用函数没有别的副作用
-* 不修改状态
-  * 函数只会计算新的值，因此不会修改变量。
-* 引用透明
-  * 函数的运行不依赖于外部变量或状态，只依赖于输入的参数，任何时候，相同参数总是能得到相同的结果。
+1. 函数是一等公民
+
+即函数与其他数据类型一样，处于平等的地位，可以把函数赋值给其他变量，也可以当做参数进行传递，或者作为其他函数的返回值。
+
+如果不太理解是什么意思，可以参考一下下面的代码：
+
+```java
+@Test
+public void addFuntion() {
+  Integer arg1 = 3;
+  Integer arg2 = 7;
+  Function<Integer, Function<Integer, Integer>> add = x -> y -> x + y;
+  Integer result = add.apply(arg1).apply(arg2);
+  assert result.equals(arg1 + arg2);
+
+  BinaryOperator<Integer> addFunction = getAddFunction();
+  Integer result1 = execBiFunction(addFunction, arg1, arg2 * 2);
+  assert result1.equals(arg1 + arg2 * 2);
+}
+
+private BinaryOperator<Integer> getAddFunction(){
+  return x -> y -> x + y;
+}
+
+private <T> T execBiFunction(BinaryOperator<T> func, T arg1, T arg2){
+  return func.apply(arg1).apply(arg2);
+}
+```
+
+这里的 `Function` 和 `BinaryOperator` 都是自定义的类，后面会说到，如果你没有用 `Java` 写过高阶函数，看到这段代码应该会有一种耳目一新的感觉，想不到 `Java` 还可以这么玩吧。 
+
+2. 没有副作用
+
+除了计算结果，调用函数没有别的副作用，不会影响外界的任何状态
+
+3. 不修改状态
+
+函数只会计算新的值，因此不会修改变量。
+
+4. 引用透明
+
+函数的运行不依赖于外部变量或状态，只依赖于输入的参数，任何时候，相同参数总是能得到相同的结果。
+
+### 函数式编程 vs 命令式编程
 
 与 `函数式编程` 相对的是 `命令式编程` ，
+
+
+
