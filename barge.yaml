@@ -1,0 +1,14 @@
+apiVersion: 0.0.4
+apps:
+  - appName: openapi-clearing-sync
+    build:
+      language: java
+      maven:
+        pom: pom.xml
+        skipTests: true
+        profile: test
+        jar: test
+        mainClass: test
+    deploy:
+      isolation: stable
+      expire: 1h
