@@ -1,6 +1,6 @@
 apiVersion: 0.0.4
 apps:
-  - appName: openapi-clearing-sync
+  - appName: openapi-admin
     build:
       language: java
       maven:
