@@ -219,7 +219,104 @@ Integer result = add.apply(arg1).apply(arg2);
 
 ## 函数式编程实例
 
-“talk is cheap, show me the code”
+> talk is cheap, show me the code.
 
-说再多，也不如一段代码来得更有解释力。下面将展示一个示例，将命令式代码转化为函数式代码，希望从中能让你感受到函数式编程的快感。
+说再多，也不如一段代码来得更有解释力。
+
+下面将展示一个示例，将命令式代码转化为函数式代码，希望从中能让你感受到函数式编程的魅力所在。
+
+这是一个很简单的程序：用信用卡购买一个甜甜圈。
+
+```java
+public class DonutShop{
+    
+    public static Donut buyDonut(CreditCard creditCard){
+        Donut donut = new Donut();
+        creditCard.charge(Donut.price);
+        return donut;
+    }
+}
+```
+
+这是常用的命令式风格的代码，在这段代码中，使用信用卡支付是一个副作用，信用卡支付往往包含调用银行接口，校验信用卡是否可用，是否授权，是否超出最大可用金额等。该函数返回一个甜甜圈。
+
+这段代码的问题在于难以进行独立测试，如果你想要进行单元测试，要么就需要先联系银行获取测试用的信用卡信息，要么就必须要 `mock` 一个信用卡对象来代替真实的 `charge` 方法，并在测试之后验证 `mock` 对象的状态。
+
+通常而言，每个 `mock` 都代表着对一个复杂对象的依赖，如果你想移除掉这些 `mock` 对象，那么就应该移除副作用。但由于最终还是需要执行“支付”这个动作，这是程序中不可避免的副作用，一个不错的解决方案就是返回值里添加一些额外的信息，来表示需要支付的账单。
+
+因此，可以抽象出一个账单的概念，用 `Payment` 类来表示：
+
+```java
+public class Payment {
+    
+    public final CreditCard creditCard;
+    public final int amount;
+    
+    public Payment(CreditCard creditCard, int amount){
+        this.creditCard = creditCard;
+        this.amount = amount;
+    }
+}
+```
+
+在函数式风格的代码中，程序由大量函数和不可变对象组成，`Payment` 类的字段均为 `public final`，表示属性公开，且不可修改，当然，改成 `private` 并添加相应的 `get` 方法也能达到同样的效果。
+
+这个类包含了表示支付的数据，由一张信用卡和需要支付的金额组成。由于 `buyDonut` 方法需要返回 `Donut` 对象和 `Payment` 对象，因此需要创建一个类来包装。比如：
+
+```java
+public class Purchase {
+    
+    public final Donut donut;
+    public final Payment payment;
+    
+    public Purchase(Donut donut, Payment payment){
+        this.donut = donut;
+        this.payment = payment;
+    }
+}
+```
+
+但这样组合并没有特别明确的意义，只是为了将两个值返回而已，如果下次是购买饼干，则需要创建一个新的类，这样未免太浪费资源了，因此更好的写法应该是进行泛化：
+
+```java
+public class Purchase<T> {
+    
+    public final T item;
+    public final Payment payment;
+    
+    public Purchase(T item, Payment payment){
+        this.item = item;
+        this.payment = payment;
+    }
+}
+```
+
+这样就能传入任意类型的对象了。
+
+其实在函数式编程中，经常会遇到类似需要返回两个对象的场景，因此可以进行进一步的抽象，使用 `Tuple` 元组类：
+
+```java
+public class Tuple<T, U> {
+    
+    public final T _1;
+    public final U _2;
+    
+    public Tuple(T t, U u){
+        this._1 = t;
+        this._2 = u;
+    }
+}
+```
+
+有了这两个类，我们再来优化一下最开始的代码：
+
+```java
+public class DonutShop {
+    public static Tuple<Donut, Payment> buyDonut(CreditCard creditCard){
+        Donut donut = new Donut();
+        Payment payment = new Payment(creditCard, Donut.price);
+        return new Tuple<>(donut, payment);
+    }
+}
+```
 
